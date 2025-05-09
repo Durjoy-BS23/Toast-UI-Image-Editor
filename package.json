@@ -1,0 +1,15 @@
+{
+  "name": "toast-ui-image-editor-setup",
+  "version": "1.0.0",
+  "description": "Setup for Toast UI Image Editor",
+  "main": "app.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "dependencies": {
+    "tui-image-editor": "^3.15.2"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
