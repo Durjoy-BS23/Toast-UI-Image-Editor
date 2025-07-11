@@ -25,8 +25,7 @@ const editor = new tui.ImageEditor(
         path: "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
         name: "DefaultImage",
       },
-      // theme: customTheme,
-      theme: {},
+      theme: customTheme,
       menu: [
         "crop",
         "flip",
@@ -45,68 +44,3 @@ const editor = new tui.ImageEditor(
     usageStatistics: false,
   }
 );
-
-// // Handle window resize
-// window.onresize = function () {
-//   editor.ui.resizeEditor();
-// };
-
-// // Handle file input
-// document.getElementById("imageInput").addEventListener("change", (event) => {
-//   const file = event.target.files[0];
-//   if (file) {
-//     const reader = new FileReader();
-//     reader.onload = (e) => {
-//       editor.loadImageFromURL(e.target.result, file.name).then(() => {
-//         console.log("Image loaded successfully");
-//       });
-//     };
-//     reader.readAsDataURL(file);
-//   }
-// });
-
-// // Handle crop button
-// document.getElementById("cropButton").addEventListener("click", () => {
-//   editor.crop({ left: 100, top: 100, width: 300, height: 200 }).then(() => {
-//     console.log("Image cropped to 300x200");
-//   });
-
-//   editor.addIcon('arrow');
-// });
-
-// // Handle rotate button
-// document.getElementById("rotateButton").addEventListener("click", () => {
-//   editor.rotate(90).then(() => {
-//     console.log("Image rotated 90°");
-//   });
-// });
-
-// // Handle flip button
-// document.getElementById("flipButton").addEventListener("click", () => {
-//   editor.flipX().then(() => {
-//     console.log("Image flipped horizontally");
-//   });
-// });
-
-// // Handle text button
-// document.getElementById("textButton").addEventListener("click", () => {
-//   editor
-//     .addText("Toast UI", {
-//       styles: {
-//         fill: "#ff0000",
-//         fontSize: 50,
-//         fontFamily: "Arial",
-//         fontWeight: "bold",
-//       },
-//       position: { x: 0, y: 0 },
-//     })
-//     .then(() => {
-//       console.log("Text added");
-//     });
-// });
-
-// document.getElementById("filterButton").addEventListener("click", () => {
-//   editor.applyFilter("grayscale").then(() => {
-//     console.log("Grayscale filter applied");
-//   });
-// });
