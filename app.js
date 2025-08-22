@@ -22,7 +22,7 @@ const editor = new tui.ImageEditor(
   {
     includeUI: {
       loadImage: {
-        path: "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
+        path: "imageurl",
         name: "DefaultImage",
       },
       theme: customTheme,
