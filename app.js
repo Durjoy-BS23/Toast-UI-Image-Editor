@@ -115,7 +115,7 @@ function displayImages(images, type) {
   images.forEach((image, index) => {
     const imgElement = document.createElement('img');
     imgElement.className = 'image-item';
-    imgElement.alt = type === 'local' ? image.name : image.name;
+    imgElement.alt = image.name;
     
     if (type === 'local') {
       const reader = new FileReader();
@@ -159,7 +159,7 @@ function resetToOptions() {
   
   // Load default placeholder image
   editor.loadImageFromURL(
-    "https://via.placeholder.com/400x300/e0e0e0/000000?text=Select+Image",
+    "https://static.vecteezy.com/system/resources/thumbnails/052/248/075/small_2x/peacock-feather-wallpaper-hd-wallpaper-photo.jpeg",
     "DefaultImage"
   );
 }
